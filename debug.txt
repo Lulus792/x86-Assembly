@@ -1,8 +1,0 @@
-gdb <filename>      ; the one getting from the linker
-layout asm          ; to get in the debugger
-break _start        ; creates a break point
-run                 ; to start the programm
-stepi               ; steps to the next line
-info registers ebx  ; shows the data that is stored in ebx
-x/x $ebx            ; prints what is locatet on the stack at the address ebx
-x/x address         ; prints what is locatet at that address
