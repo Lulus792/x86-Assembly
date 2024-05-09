@@ -1,0 +1,41 @@
+x86 - 32-bit processir, each reguíster is 32 bits in size
+- Example register: eax, ebx, ecx, edx
+- You can acces just 16 bits by dropping the e,
+  giving ax, bx, cx, dx
+- You can acces 8-bit high: ah, bh, ch, dh
+- You can acces 8-bit low: al, bl, cl, dl
+- the r - register are 64-bit: rax, rbx, rcx, rdx
+
+┌─────────┬─────────────────────────────────────┐
+│ Name    │ Description                         │
+├─────────┼─────────────────────────────────────┤
+│ eax     │ Extended accumulator, autotically   │
+│ Name    │ Description                         │
+│         │ used by multiplikation and divison  │
+│         │ instructions                        │
+├─────────┼─────────────────────────────────────┤
+│ ebx     │ General purpose                     │
+├─────────┼─────────────────────────────────────┤
+│ ecx     │ Used as a loop counter by the CPU   │
+├─────────┼─────────────────────────────────────┤
+│ edx     │ General purpose                     │
+├─────────┼─────────────────────────────────────┤
+│ esi     │ High speed memory transfer          │
+├─────────┼─────────────────────────────────────┤
+│ edi     │ High speed memory transfer          │
+├─────────┼─────────────────────────────────────┤
+│ ebp     │ Used to referece function parameters│
+│         │ and local variables on the stack    │
+├─────────┼─────────────────────────────────────┤
+│ esp     │ A pointer to the current stack      │
+│         │ address                             │
+└─────────┴─────────────────────────────────────┘
+
+┌────┬────────────────┐
+│ CF │ carry flag     │
+│ OF │ overflow flag  │
+│ SF │ sign flag      │
+│ ZF │ zero flag      │
+│ AC │ auxilary carry │
+│ PF │ parity flag    │
+└────┴────────────────┘
