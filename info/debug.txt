@@ -6,3 +6,16 @@ stepi               ; steps to the next line
 info registers ebx  ; shows the data that is stored in ebx
 x/x $ebx            ; prints what is locatet on the stack at the address ebx
 x/x address         ; prints what is locatet at that address, in Hex
+
+x/x eflags
+  PF - shows if the result is an odd or eevan number
+    0 - eevan
+    1 - odd
+
+  IF - tells if interupt is possible
+
+  CF - Carry Flag, if set to 1, there was a carry on the previous operation
+
+  ZF - Zero Flag, if the register from the previous operation is zero
+
+mov rax, 0b11111111  -   puts binary in rax
